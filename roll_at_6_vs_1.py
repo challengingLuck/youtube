@@ -14,7 +14,7 @@ def reroll_at_6 (starting_value):
 def reroll_at_1 (starting_value):
     roll_number = random.randint(1,6)
     if(roll_number == 1):
-        return(reroll_at_6(roll_number))
+        return(reroll_at_1(roll_number))
     else:
         return(starting_value + roll_number)
 

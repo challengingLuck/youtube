@@ -1,0 +1,11 @@
+file: battleship.py
+line: 1
+align: top
+---
+↓↓↓↓↓↓↓⇥
+    import numpy as np 
+    import random
+    import matplotlib.pyplot as plt
+    from matplotlib import colors
+    from matplotlib import rcParams
+    import seaborn as sns

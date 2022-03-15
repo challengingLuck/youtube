@@ -1,5 +1,7 @@
 name: GitHub Actions Demo
-on: [push]
+on: 
+  schedule:
+    - cron: '30 15 * * FRI'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest

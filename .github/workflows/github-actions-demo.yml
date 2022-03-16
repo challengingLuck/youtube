@@ -1,7 +1,5 @@
 name: GitHub Actions Demo
-on: 
-  schedule:
-    - cron: '30 15 * * FRI'
+on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -15,5 +13,5 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: |
-          ls
+          ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
